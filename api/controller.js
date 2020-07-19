@@ -12,6 +12,7 @@ var controllers = {
        res.json(aboutInfo);
    },
     getRides: function(req, res) {
+        res.setHeader('Access-Control-Allow-Origin','*');
         rides.find(req, res, function(err, dist) {
             if (err)
                 res.send(err);
