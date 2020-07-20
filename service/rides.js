@@ -14,7 +14,6 @@ var rides = {
             db.collection("Items").find().toArray(function (error, results) {
                 if (error) throw error;
                 console.log(results);
-                // res.send({rides : results});
                 res.send(results);
 
                 client.close();
