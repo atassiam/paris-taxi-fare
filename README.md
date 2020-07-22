@@ -2,7 +2,7 @@
 
 NodeJS Microservice REST API for Paris Taxi Fare app
 
-To launch locally:
+## Available Scripts
 
 ### `npm install`
 
