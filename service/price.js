@@ -25,6 +25,7 @@ var price = {
     var lateRideFare = 0.5;
     var busyPeriodFare = 1;
 
+    //check if startTime is during late time 
     if(moment(startTime).isBetween(beforeLateTime, afterLateTime)){
         console.log("basicFare");
         priceResult = basicFare;
@@ -33,6 +34,8 @@ var price = {
         console.log("lateRideFare");
         priceResult = basicFare + lateRideFare;
     }
+
+    //check if startTime is during busy period 
     if(moment(startTime).isBetween(beforeBusyTime, afterBusyTime)){
          console.log("busyPeriodFare");
          priceResult = basicFare + busyPeriodFare;

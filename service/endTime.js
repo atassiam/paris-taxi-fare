@@ -7,6 +7,7 @@ var endTime = {
         var endTime = moment(startTime).add(req.params.duration, 'seconds');
         console.log("end time : " + endTime);
 
+        //function to convert seconds in hours, minutes and seconds
         function sec2time(timeInSeconds) {
             var pad = function(num, size) { return ('000' + num).slice(size * -1); },
             time = parseFloat(timeInSeconds).toFixed(3),
