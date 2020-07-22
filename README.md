@@ -19,3 +19,21 @@ You will also see any lint errors in the console.
   
  Unit testing:
 ### `npm run test`
+
+## Routes
+
+### '/'
+### '/about'
+General informations of the app: name, description and version
+
+### '/rides'
+Get list of the rides
+Response: JSON Array => [{"id":"{id}","distance":{number},"duration":{number},"startTime":"{datetime}"]
+
+### '/price/:distance/:time'
+Get price of a ride
+Response: JSON object => {"price":{number}}
+
+### '/end/:time/:duration'
+Get end endtime of a ride
+Response: JSON object => {"endTime":"{datetime}", "duration":"{string}"}
