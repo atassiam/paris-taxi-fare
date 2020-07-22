@@ -4,14 +4,23 @@
   "description": "Paris Taxi Fare application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
+    "azure": "^2.3.1-preview",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
     "moment": "^2.27.0",
     "mongodb": "^3.5.9",
+    "ms-rest-azure": "^3.0.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "supertest": "^4.0.2"
   }
 }

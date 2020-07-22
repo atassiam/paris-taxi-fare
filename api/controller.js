@@ -13,14 +13,14 @@ var controllers = {
            description:properties.description,
            version: properties.version
        }
-       res.send(aboutInfo);
+       res.status(200).send(aboutInfo);
    },
     getRides: function(req, res) {
         res.setHeader('Access-Control-Allow-Origin','*');
         rides.find(req, res, function(err, dist) {
             if (err)
                 res.send(err);
-            res.json(dist);
+            res.status(200).json(dist);
         });
     },
     getPrice: function(req, res) {
@@ -28,7 +28,7 @@ var controllers = {
         price.find(req, res, function(err, dist) {
             if (err)
                 res.send(err);
-            res.json(dist);
+            res.status(200).json(dist);
         });
     },
     getEndTime: function(req, res) {
@@ -36,7 +36,7 @@ var controllers = {
         endTime.find(req, res, function(err, dist) {
             if (err)
                 res.send(err);
-            res.json(dist);
+            res.status(200).json(dist);
         });
     },
 };
