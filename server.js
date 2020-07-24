@@ -2,6 +2,8 @@ const express = require('express')
 const app = express();
 const port = process.env.PORT || 3001;
 
+app.set(port);
+
 const routes = require('./api/routes');
 routes(app);
 app.listen(port, function() {
